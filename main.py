@@ -6,10 +6,9 @@ import socketserver
 import time
 
 #########
-API_TOKEN = '7834618808:AAHumrmQBmXEtjnY1PLbEnExytS-u2VUX98'
+API_TOKEN = 'tu_token_aquí'
 bot = telebot.TeleBot(API_TOKEN)
-admin = {6181692448}
-admin2 = {7346891727}
+admin = {tu_user_id_aqui}
 user_ids = []
 pending_user_id = None
 sticker_to_send = None
