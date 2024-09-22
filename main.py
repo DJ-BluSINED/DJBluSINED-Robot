@@ -158,7 +158,7 @@ def echo_all(message):
         user_ids.append(message.from_user.id)
         print(user_ids, "\n")
         formatted_message = f"*💭Nuevo mensaje:*\n{message.text}\n\n👤*Usuario:*\n• _{message.from_user.first_name}_\n• _@{message.from_user.username}_\n• `{message.chat.id}`"
-       bot.send_message(7346891727, formatted_message, parse_mode='Markdown')
+        bot.send_message(admin, formatted_message, parse_mode='Markdown')
 
 
 
