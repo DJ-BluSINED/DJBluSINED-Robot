@@ -156,9 +156,11 @@ def echo_all(message):
            return
        if message.from_user.id not in user_ids:
         user_ids.append(message.from_user.id)
+        prin = f"NM: {message.text}, {message.from_user.first_name}, @{message.from_user.username}, {message.chat.id}"
         print(user_ids, "\n")
+        print(prin, "\n")
         formatted_message = f"*💭Nuevo mensaje:*\n{message.text}\n\n👤*Usuario:*\n• _{message.from_user.first_name}_\n• _@{message.from_user.username}_\n• `{message.chat.id}`"
-        bot.send_message(admin, formatted_message, parse_mode='Markdown')
+        bot.send_message(list(admin)[0], formatted_message, parse_mode='Markdown')
 
 
 
